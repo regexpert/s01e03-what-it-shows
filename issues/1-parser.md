@@ -1,4 +1,4 @@
-**Reports covered: 374** (of the 412 in #4471)
+**Reports covered: 379** (of the 412 in #4471). 5 of them are also problem #3 (one day off); the desk counts a report where it is filed.
 
 The shared date parser reads every date month first. Tenants whose locale writes the day first get flipped dates (12 May becomes 5 December).
 

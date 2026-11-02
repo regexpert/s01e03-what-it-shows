@@ -8,13 +8,13 @@
 <tr class="wrong"><td><code>hint</code></td><td>33</td><td class="tags">hint ×18 · parser ×15</td><td>3</td><td>2026-04-17 → 2026-09-22</td><td>not this ticket — no ticket of its own</td></tr>
 </tbody></table>
 <p class="note">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p>
-<p>The table is computed from the data. It files the 5 one-day reports under <code>parser</code> (379), because it looks only at tenant and channel. Read as the people wrote them, the split is:</p>
+<p>The table is computed from the data. It files the 5 one-day reports under <code>parser</code> (379), because it looks only at tenant and channel. The three problems, as the desk counts them:</p>
 <table><thead><tr><th>#</th><th>Problem</th><th>Reports</th><th>Who</th></tr></thead><tbody>
-<tr><td>1</td><td><strong>Parser</strong> reads every date month first, so day-first tenants get flipped dates</td><td>374</td><td>all 11 tenants, app, email and form</td></tr>
+<tr><td>1</td><td><strong>Parser</strong> reads every date month first, so day-first tenants get flipped dates</td><td>379 (5 of them are also problem 3)</td><td>all 11 tenants, app, email and form</td></tr>
 <tr><td>2</td><td><strong>Form hint</strong>: booking-v3 prints <code>MM/DD/YYYY</code> under the date field, so people at day-first tenants type month first</td><td>33</td><td>alder.physio, copper.studio, pale.harbour (form)</td></tr>
 <tr><td>3</td><td><strong>One day off</strong>: a date lands exactly one day away, not a month/day swap. Looks like a time zone or day-boundary bug</td><td>5</td><td>R-41202, R-41209, R-41236, R-41344, R-41620</td></tr>
 </tbody></table>
-<p>374 + 33 + 5 = 412.</p>
+<p>379 + 33 = 412. The desk counts a report where it is filed, so the 5 one-day reports sit in the parser's 379 and also form problem 3.</p>
 <h2>Why the merge hid this</h2>
 <ul><li><a href="#">Decision 0001</a> merges on subject line. All three problems share subjects such as "Wrong day on the invite".</li><li>Intake tags from the browser. It tagged 15 of the 33 hint reports as <code>parser</code>.</li><li>The 5 one-day reports say what they are in the body: "one day off", "arrived before I made the booking", "Lisbon got Tuesday, Toronto got Monday".</li></ul>
 <h2>What to do</h2>

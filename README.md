@@ -4,7 +4,7 @@ Support ticket #4471 merged 412 date reports as one issue. It holds three proble
 
 | Problem | Reports | Issue |
 |---|---|---|
-| Parser reads dates month first | 374 | #1 |
+| Parser reads dates month first | 379 | #1 |
 | booking-v3 form hint prints MM/DD/YYYY | 33 | #2 |
 | One day off (time zone / day boundary) | 5 | #3 |
 
