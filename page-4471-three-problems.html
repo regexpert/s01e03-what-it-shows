@@ -15,6 +15,7 @@
 <tr><td>3</td><td><strong>One day off</strong>: a date lands exactly one day away, not a month/day swap. Looks like a time zone or day-boundary bug</td><td>5</td><td>R-41202, R-41209, R-41236, R-41344, R-41620</td></tr>
 </tbody></table>
 <p>379 + 33 = 412. The desk counts a report where it is filed, so the 5 one-day reports sit in the parser's 379 and also form problem 3.</p>
+<h2>Where each problem stands (desk update, #4471 closed 5 Oct)</h2><table><thead><tr><th>#</th><th>Problem</th><th>Desk status</th><th>Our ticket</th></tr></thead><tbody><tr><td>1</td><td>Parser</td><td><strong>fixed</strong>: "fix(dates): parse dd/mm for eu locales"</td><td>closed, completed</td></tr><tr><td>2</td><td>Form hint</td><td><strong>won't fix</strong>: "booking-v3 form retired"</td><td>closed, not planned</td></tr><tr><td>3</td><td>One day off</td><td>not addressed by the desk</td><td>open</td></tr></tbody></table>
 <h2>Why the merge hid this</h2>
 <ul><li><a href="#">Decision 0001</a> merges on subject line. All three problems share subjects such as "Wrong day on the invite".</li><li>Intake tags from the browser. It tagged 15 of the 33 hint reports as <code>parser</code>.</li><li>The 5 one-day reports say what they are in the body: "one day off", "arrived before I made the booking", "Lisbon got Tuesday, Toronto got Monday".</li></ul>
 <h2>What to do</h2>

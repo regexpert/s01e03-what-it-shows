@@ -35,6 +35,14 @@ it looks only at tenant and channel. The three problems, as the desk counts them
 
 379 + 33 = 412. The desk counts a report where it is filed, so the 5 one-day reports sit in the parser's 379 and also form problem 3.
 
+## Where each problem stands (desk update, #4471 closed 5 Oct)
+
+| # | Problem | Desk status | Our ticket |
+|---|---|---|---|
+| 1 | Parser | **fixed**: "fix(dates): parse dd/mm for eu locales" | closed, completed |
+| 2 | Form hint | **won't fix**: "booking-v3 form retired" | closed, not planned |
+| 3 | One day off | not addressed by the desk | open |
+
 ## Why the merge hid this
 
 - [Decision 0001](/kb/decisions/0001-dedupe-by-subject) merges on subject line. All three problems share subjects such as "Wrong day on the invite".
